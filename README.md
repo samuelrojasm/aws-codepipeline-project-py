@@ -15,16 +15,16 @@
  * `cdk docs`        open CDK documentation
 
 ## Preliminary preparations
+* `brew upgrade awscli` for MacOS 
+* `aws --version` 
+* `brew upgrade aws-cdk` for MacOS
+* `cdk --version`
 * After the init process completes and the virtualenv is created, you can use the following
 step to activate your virtualenv.<br>
 `source .venv/bin/activate`
 * `python3 -m pip install --upgrade pip` 
 * Once the virtualenv is activated, you can install the required dependencies.<br>
 `pip install -r requirements.txt`
-* `brew upgrade awscli` for MacOS 
-* `aws --version` 
-* `brew upgrade aws-cdk` for MacOS
-* `cdk --version`
 * At this point you can now synthesize the CloudFormation template for this code.<br>
 `cdk synth`
 * To add additional dependencies, for example other CDK libraries, just add
